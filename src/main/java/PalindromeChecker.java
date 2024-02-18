@@ -37,10 +37,8 @@ public void tester()
 }
 public boolean palindrome(String sWord)
 {
-if(sWord.equals(reverse(sWord)) && sWord.equals(no(sWord)))
-    return true;
-  else
-    return false;
+String cleanedWord = no(sWord).toLowerCase();
+    return cleanedWord.equals(reverse(cleanedWord));
 }
 public String reverse(String str)
 {
